@@ -1,0 +1,84 @@
+.header-slider {
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+    color: #ffffff;
+    background-attachment: fixed;
+    font-family: "GothamBold", sans-serif;
+    text-transform: uppercase;
+
+    h1 {
+        font-size: 80px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        letter-spacing: 0.3em;
+    }
+
+    .header-slider_slide {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-slider_slide-1 {
+        background-image: url('/img/slide.jpg');
+    }
+
+    .header-slider_slide-2 {
+        background-image: url('/img/slide2.jpg');
+    }
+
+    .header-slider_slide-3 {
+        background-image: url('/img/slide3.jpg');
+    }
+
+    .header-slider_slide-4 {
+        background-image: url('/img/slide4.jpg');
+    }
+
+    .header-slider_slide-5 {
+        background-image: url('/img/slide5.jpg');
+    }
+
+    .slick-track {
+        height: 100vh;
+    }
+
+    .slick-dots {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        bottom: 50%;
+    }
+
+    .slick-dots li {
+        position: relative;
+        margin: 0 20px;
+        cursor: pointer;
+    }
+
+    .slick-dots li button:before {
+        content: '';
+        border: 1px solid #ffffff;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+
+    .slick-dots li button:hover::before,
+    .slick-dots li button:focus::before,
+    .slick-dots li button:active::before {
+        background-color: #ffffff;
+    }
+
+}
