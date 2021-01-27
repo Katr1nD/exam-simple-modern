@@ -1,0 +1,122 @@
+.news {
+    padding: 140px 0;
+    background: url(../img/news_background.png) 50% top no-repeat, linear-gradient(45deg, #7e5aff, #55b7ff);
+    background-size: cover;
+    font-family: "GothamBold", sans-serif;
+    color: #2c4058;
+
+    hr {
+        margin: 0 auto;
+        width: 100px;
+        color: #ffffff;
+    }
+
+    .news_title {
+        font-size: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    .news_slider {
+        display: flex;
+        justify-content: center;
+    }
+
+    .news_slider .slick-list .slick-track {
+        display: flex;
+    }
+
+    .news_slider .slick-list .slick-track .slick-slide {
+        height: auto;
+    }
+
+    .news_slider .slick-dots {
+        bottom: -60px;
+        display: flex;
+        justify-content: center;
+        right: 0;
+        width: auto;
+        left: 0;
+        margin-top: 40px;
+    }
+
+    .news_slider .slick-dots li {
+        margin-right: 40px;
+    }
+
+    .news_slider .slick-dots li:last-child {
+        margin-right: 0;
+    }
+
+    .news_slider .slick-dots li button:before {
+        font-size: 20px;
+    }
+
+    .news_slider__elem {
+        position: relative;
+        background-color: #fff;
+        width: 370px;
+        margin-right: 30px;
+        flex-direction: column;
+        display: flex !important;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    }
+
+    .news_slider__elem:hover {
+        opacity: 0.8;
+    }
+
+    .news_slider__img {
+        max-height: 240px;
+        overflow: hidden;
+    }
+
+    .news_slider__img img {
+        width: 100%;
+    }
+
+    .news_slider__info {
+        padding: 25px 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news_slider__info__title {
+        // font-family: "GothamBold";
+        font-size: 22px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .news_slider__info__text {
+        font-family: "OpenSans-Regular";
+        font-size: 16px;
+        line-height: 1.6em;
+        flex-grow: 1;
+    }
+
+    .person {
+        margin-top: 35px;
+        display: flex;
+    }
+
+    .news_slider__person_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 20px;
+    }
+
+    .news_slider__person__name {
+        text-transform: uppercase;
+    }
+
+    .news_slider__person__date {
+        color: #55b7ff;
+        font-size: 14px;
+    }
+}
