@@ -20,10 +20,10 @@
         <header class="header">
             <a href="#" class="header_logo"><img src="./img/logo.svg" alt="logo"></a>
             <ul class="header_menu">
-                <li><a href="#" class="header_menu__item">About us</a></li>
-                <li><a href="#" class="header_menu__item">Projects</a></li>
-                <li><a href="#" class="header_menu__item">News</a></li>
-                <li><a href="#" class="header_menu__item">Contact</a></li>
+                <li><a href="#header-slider" class="header_menu__item">About us</a></li>
+                <li><a href="#what-we-do" class="header_menu__item">Projects</a></li>
+                <li><a href="#news" class="header_menu__item">News</a></li>
+                <li><a href="#footer" class="header_menu__item">Contact</a></li>
             </ul>
 
             <a class="header_social" href="https://ru-ru.facebook.com/" target="_blank">
@@ -38,7 +38,7 @@
 
         </header>
 
-        <section class="header-slider">
+        <section id="header-slider" class="header-slider">
             <div class="header-slider_slide header-slider_slide-1">
                 <h1>Simple & Modern</h1>
                 <p>We make the world's beautiful every day</p>
@@ -61,7 +61,7 @@
             </div>
         </section>
 
-        <section class="what-we-do">
+        <section id="what-we-do" class="what-we-do">
             <h3 class="what-we-do_title">What we do</h3>
             <div class="what-we-do_1">
                 <div class="what-we-do_first">
@@ -94,7 +94,7 @@
                 </div>
         </section>
 
-        <section class="news">
+        <section id="news" class="news">
             <hr />
             <h3 class="news_title">Latest news</h3>
 
@@ -155,19 +155,65 @@
             </div>
         </section>
 
-        <section>
+        <section id="gallery" class="gallery">
             <hr />
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <h3 class="gallery_title">Gallery</h3>
+            <div class="gallery_imgs">
+                <div class="gallery_imgs_first">
+                    <img src="./img/gallery_img1.jpg" alt="img1">
+                    <img class="gallery_imgs__sphere" src="./img/360.png" alt="">
+                </div>
+                <img class="gallery_imgs_second" src="./img/gallery_img2.jpg" alt="img2">
+                <img class="gallery_imgs_third" src="./img/gallery_img3.jpg" alt="img3">
+                <img class="gallery_imgs_fourth" src="./img/gallery_img4.jpg" alt="img4">
+                <img class="gallery_imgs_fifth" src="./img/gallery_img5.jpg" alt="img5">
             </div>
-            <button>See more</button>
+            <button class="gallery_button">See more</button>
         </section>
 
-        <footer></footer>
+        <footer id="footer" class="footer">
+            <div class="footer_map"></div>
+
+            <div class="footer_form">
+                <hr />
+                <h3 class="footer_form__title">Get in touch</h3>
+                <div class="footer_form__info">
+                    <div class="footer_form__info__company">
+                        <p><i class="fas fa-map-marker-alt"></i>
+                            &emsp;91 Nolan Extensions Suite 670</p>
+                        <p><i class="fas fa-phone"></i>
+                            &emsp;+001 356-863-2454</p>
+                        <p><i class="fas fa-inbox"></i>
+                            &emsp;gahuy93@gmail.com</p>
+                        <p><i class="far fa-clock"></i>
+                            &emsp;From 07:05AM to 19:30PM</p>
+                    </div>
+                    <div class="footer_form__info__user">
+                        <input type="text" placeholder="Mollie Medina" name="fullname" />
+                        <input type="email" placeholder="Email" name="email" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copyrights">
+                <div class="footer_copyrights__logo">
+                    <img src="./img/logo.svg" alt="logo" />
+                    <p class="footer_copyrights__info">Copyrights &copy;2017 Monticello | Made with &#x2665; by Katrin
+                        D.</p>
+                </div>
+                <div class="footer__copyrights__socials">
+                    <a class="footer_social" href="https://ru-ru.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f fa-xs"></i>
+                    </a>
+                    <a class="footer_social" href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter fa-xs"></i>
+                    </a>
+                    <a class="footer_social" href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram fa-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

@@ -1,13 +1,13 @@
-.header-slider {
+header-slider {
     position: relative;
     background-size: 100%;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
     height: 100vh;
-    color: #ffffff;
+    color: $mainColor;
     background-attachment: fixed;
-    font-family: "GothamBold", sans-serif;
+    font-family: $mainFont, $secondlyFont;
     text-transform: uppercase;
 
     h1 {
@@ -72,7 +72,7 @@
 
     .slick-dots li button:before {
         content: '';
-        border: 1px solid #ffffff;
+        border: 1px solid $mainColor;
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -81,7 +81,7 @@
     .slick-dots li button:hover::before,
     .slick-dots li button:focus::before,
     .slick-dots li button:active::before {
-        background-color: #ffffff;
+        background-color: $mainColor;
     }
 
 }

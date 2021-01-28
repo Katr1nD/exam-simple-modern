@@ -1,0 +1,55 @@
+.gallery {
+    padding: 140px;
+    font-family: "GothamBold", sans-serif;
+
+    hr {
+        @include hr($secondlyColor);
+    }
+
+    .gallery_title {
+        text-transform: uppercase;
+        color: $secondlyColor;
+        text-align: center;
+        font-size: 44px;
+    }
+
+    .gallery_imgs {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        margin: 40px 0;
+    }
+
+    .gallery_imgs>img {
+        cursor: pointer;
+    }
+
+    .gallery_imgs_first {
+        position: relative;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        cursor: pointer;
+        // align-self: stretch;
+        // justify-self: stretch;
+
+        .gallery_imgs__sphere {
+            position: absolute;
+            z-index: 10;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: all 1s ease-out;
+        }
+
+        .gallery_imgs__sphere:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    .gallery_button {
+        @include button;
+    }
+}
